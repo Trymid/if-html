@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.advantages {
+    padding: 120px 7.23% 0 7.23%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.advantages__header {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #383838;
+    margin-bottom: 20px;
+}
+
+.advantages__highlight {
+    margin: 0 0 80px calc((100% - 100px) / 2);
+    width: 100px;
+    height: 4px;
+    background-color: #F5BD41;
+    border: none;
+}
+
+.cards-list {
+    list-style: none;
+    margin-bottom: 122px;
+}
+
+.card {
+    display: inline-block;
+    width: 296px;
+    margin-right: calc((100% - (299px * 4)) / 3);
+}
+
+.card:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.card__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #383838;
+}
+
+.card__icon {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto 48px auto;
+}
+
+.icon-headphones {
+    background-image: url('../images/other-graphics/icons/icon-headphones.png');
+}
+
+.icon-chat {
+    background-image: url('../images/other-graphics/icons/icon-chat.png');
+}
+
+.icon-devices {
+    background-image: url('../images/other-graphics/icons/icon-devices.png');
+}
+
+.icon-thumb-up {
+    background-image: url('../images/other-graphics/icons/icon-thumb-up.png');
+}
+
+
+
+
+
+
+
