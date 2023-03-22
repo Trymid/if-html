@@ -1,124 +1,143 @@
 @import url(../styles/roboto-font.css);
 
+
+
+
+
+/* ############################################
+                 || GENERAL STYLES
+############################################## */
 body {
-    font-family: 'Roboto', serif;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
+
+
+/* ############################################
+                  || ADVANTAGES
+############################################# */
 .advantages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 120px 7.22% 122px 7.22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 7.22% 122px 7.22%;
 }
 
 .advantages__header {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    color: #383838;
-    margin-bottom: 20px;
-    text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .advantages__highlight {
-    width: 8.12%;
-    height: 4px;
-    background-color: #F5BD41;
-    border: none;
-    margin-bottom: 80px;
+  width: 8.12%;
+  height: 4px;
+  background-color: #f5bd41;
+  border: none;
+  margin-bottom: 80px;
 }
 
-.cards-list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 3vh;
-    column-gap: 1.3%;
-    justify-content: space-between;
+.advantages__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 3vh;
+  column-gap: 1.3%;
+  justify-content: space-between;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 296px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 296px;
 }
 
 .card__icon {
-    width: 100px;
-    height: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    margin-bottom: 48px;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-bottom: 48px;
 }
 
 .card__text {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #383838;
-    text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #383838;
+  text-align: center;
 }
 
 .icon-headphones {
-    background-image: url('../images/other-graphics/icons/icon-headphones.png');
+  background-image: url("../images/other-graphics/icons/icon-headphones.png");
 }
 
 .icon-chat {
-    background-image: url('../images/other-graphics/icons/icon-chat.png');
+  background-image: url("../images/other-graphics/icons/icon-chat.png");
 }
 
 .icon-devices {
-    background-image: url('../images/other-graphics/icons/icon-devices.png');
+  background-image: url("../images/other-graphics/icons/icon-devices.png");
 }
 
 .icon-thumb-up {
-    background-image: url('../images/other-graphics/icons/icon-thumb-up.png');
-    background-size: 90%;
-    background-position-x: 51%;
-    background-position-y: 30%;
+  background-image: url("../images/other-graphics/icons/icon-thumb-up.png");
+  background-size: 90%;
+  background-position-x: 51%;
+  background-position-y: 30%;
 }
 
 
 
+
+
+/* ##############################################
+                  || FOOTER
+################################################ */
 .footer {
-    color: white;
-    background-color: #10367C;
-    padding: 120px 7.22% 120px 7.22%;
+  color: white;
+  background-color: #10367c;
+  padding: 120px 7.22% 120px 7.22%;
 }
 
 .footer__menu {
-    display: flex;
-    column-gap: 1.11%;
-    justify-content: space-between;
-    margin-bottom: 64px;
+  display: flex;
+  column-gap: 1.11%;
+  justify-content: space-between;
+  margin-bottom: 64px;
 }
 
 .footer__list {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
 }
 
 .footer__list-item:first-child {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .footer__link {
-    text-decoration: none;
-    color: white;
+  color: white;
 }
 
 .footer__copyrights {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
-
