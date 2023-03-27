@@ -9,62 +9,149 @@
   <title>TripHouse</title>
 </head>
 <body>
-<div class="advantages">
-  <h2 class="advantages__header">What do we offer</h2>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__bar">
+        <div>
+          <a href="./index.html">
+            <img src="./images/content/logo.png" alt="logo">
+          </a>
+        </div>
 
-  <hr class="advantages__highlight"/>
+        <div class="header__menu">
+          <nav class="nav-1">
+            <ul class="nav-1__list">
+              <li class="nav-1__item">
+                <a class="nav-1__link" href="#">Stays</a>
+                <span class="nav-1__link-underline"></span>
+              </li>
 
-  <ul class="advantages__list">
-    <li class="card">
-      <div class="card__icon icon-headphones"></div>
-      <p class="card__text">Support 24/7</p>
-    </li>
+              <li class="nav-1__item">
+                <a class="nav-1__link" href="#">Attractions</a>
+                <span class="nav-1__link-underline"></span>
+              </li>
+            </ul>
+          </nav>
 
-    <li class="card">
-      <div class="card__icon icon-chat"></div>
-      <p class="card__text">Communicate directly</p>
-    </li>
+          <nav class="nav-2">
+            <ul class="nav-2__list">
+              <li class="header__view-mode"></li>
+              <li class="header__account"></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-    <li class="card">
-      <div class="card__icon icon-devices"></div>
-      <p class="card__text">Book online</p>
-    </li>
+      <h1 class="header__title">Discover stays
+        <span>to live, work or just relax</span>
+      </h1>
 
-    <li class="card">
-      <div class="card__icon icon-thumb-up"></div>
-      <p class="card__text">Real guest reviews</p>
-    </li>
-  </ul>
-</div>
+      <form action="/" class="form" method="post">
+        <ul class="form__list">
+          <li class="form__section form__destination">
+            <label class="form__label" for="destination">Your destination or hotel name</label>
+            <div class="form__background form__background--left">
+              <input id="destination" class="form__item" type="text" name="destination" value="New York">
+            </div>
+          </li>
 
-<div id="footer" class="footer">
-  <div class="footer__menu">
-    <ul class="footer__list">
-      <li class="footer__list-item"><a class="footer__link" href="#">About</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">How Triphouse works</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Careers</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Privacy</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Terms</a></li>
-    </ul>
+          <li class="form__section form__dates">
+            <label class="form__label" for="dates">Check-in — Check-out</label>
+            <div class="form__background">
+              <button id="dates" class="form__item" type="button">Tue 15 Sept — Sat 19 Sept</button>
+            </div>
+          </li>
 
-    <ul class="footer__list">
-      <li class="footer__list-item"><a class="footer__link" href="#">Property types</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Guest houses</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Hotels</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Apartments</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Villas</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Holiday homes</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Hostels</a></li>
-    </ul>
+          <li class="form__parameters">
+            <div class="form__background">
+              <button class="form__item" type="button">2 Adults — 0 Children — 1 Room</button>
+            </div>
+          </li>
 
-    <ul class="footer__list">
-      <li class="footer__list-item"><a class="footer__link" href="#">Support</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">Contact Customer Service</a></li>
-      <li class="footer__list-item"><a class="footer__link" href="#">FAQ</a></li>
-    </ul>
+          <li class="form__search">
+            <div class="form__background form__background--right">
+              <button class="form__item btn-search">Search</button>
+            </div>
+          </li>
+        </ul>
+      </form>
+
+      <ul class="header__stores">
+        <li>
+          <a href="#" target="_blank">
+            <div class="header__google-play"></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <div class="header__app-store"></div>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+
+    <main class="main">
+      <div class="advantages">
+        <h2 class="advantages__header">What do we offer</h2>
+
+        <hr class="advantages__highlight"/>
+
+        <ul class="advantages__list">
+          <li class="card">
+            <div class="card__icon icon-headphones"></div>
+            <p class="card__text">Support 24/7</p>
+          </li>
+
+          <li class="card">
+            <div class="card__icon icon-chat"></div>
+            <p class="card__text">Communicate directly</p>
+          </li>
+
+          <li class="card">
+            <div class="card__icon icon-devices"></div>
+            <p class="card__text">Book online</p>
+          </li>
+
+          <li class="card">
+            <div class="card__icon icon-thumb-up"></div>
+            <p class="card__text">Real guest reviews</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__menu">
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__link" href="#">About</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">How Triphouse works</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Careers</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Privacy</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Terms</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__link" href="#">Property types</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Guest houses</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Hotels</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Apartments</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Villas</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Holiday homes</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Hostels</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__link" href="#">Support</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Contact Customer Service</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <p class="footer__copyrights">© 2022Triphouse, Inc. All rights reserved</p>
+    </footer>
   </div>
-
-  <p class="footer__copyrights">© 2022Triphouse, Inc. All rights reserved</p>
-</div>
 </body>
 </html>
