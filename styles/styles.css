@@ -1,9 +1,5 @@
 @import url(../styles/roboto-font.css);
 
-
-
-
-
 /* ############################################
                  || GENERAL STYLES
 ############################################## */
@@ -13,8 +9,247 @@ body {
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
+
+
+
+
+
+/* ###############################################
+                  || WRAPPER
+################################################# */
+.wrapper {
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* ###############################################
+                  || HEADER
+################################################# */
+.header {
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  padding: 5.67vh 7.22% 13.35vh 7.22%;
+  background-image: url("../images/other-graphics/background/header-background.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__bar {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 21.78vh;
+
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  column-gap: 48px;
+
+}
+
+.header__side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 24px;
+
+}
+
+.nav-1 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-1__list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.nav-1__item {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-1__link {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.nav-1__link-underline {
+  width: 80%;
+  height: 4px;
+  background-color: #f5bd41;
+  visibility: hidden;
+}
+
+.nav-1__item:hover > .nav-1__link-underline {
+  visibility: visible;
+}
+
+.nav-2 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav-2__list{
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.header__view-mode {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/other-graphics/icons/sprite.png");
+  background-position: left top;
+}
+
+.header__account {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/other-graphics/icons/sprite.png");
+  background-position: left -30px;
+}
+
+.header__title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 44%;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 11.15vh;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 0 24px 24px;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 13.35vh;
+}
+
+.form__section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__background {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.form__background--left {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.form__background--right {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.form__item {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 8px;
+  height: 64px;
+  padding: 0 24px;
+  border: none;
+  color: #383838;
+}
+
+.form__item:hover {
+  outline: 3px solid #F5BD41;
+  outline-offset: -3px;
+}
+
+.form__destination {
+  flex: 1 1 467px;
+}
+
+.form__dates {
+  flex: 1 1 259px;
+}
+
+.form__parameters {
+  flex: 1 1 314px;
+}
+
+.form__search {
+  flex: 1 1 192px;
+}
+
+.btn-search {
+  color: white;
+  background-color: #3077C6;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__stores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 17px;
+}
+
+.header__google-play {
+  width: 135px;
+  height: 40px;
+  background-image: url("../images/other-graphics/icons/sprite.png");
+  background-position: left -70px;
+}
+
+.header__app-store {
+  width: 118px;
+  height: 40px;
+  background-image: url("../images/other-graphics/icons/sprite.png");
+  background-position: left -110px;
+}
+
+/* ###############################################
+                  || MAIN
+################################################# */
+
+
 
 
 
