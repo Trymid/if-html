@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" type="image/svg+xml" href="./images/other-graphics/icons/favicon.svg">
   <title>TripHouse</title>
 </head>
 <body>
@@ -35,8 +36,16 @@
 
           <nav class="nav-2">
             <ul class="nav-2__list">
-              <li class="header__view-mode"></li>
-              <li class="header__account"></li>
+              <li>
+                <svg class="header__view-mode">
+                  <use href="./images/other-graphics/icons/sprite.svg/#night-view-outline"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="header__account">
+                  <use href="./images/other-graphics/icons/sprite.svg/#account-outline"></use>
+                </svg>
+              </li>
             </ul>
           </nav>
         </div>
@@ -79,13 +88,17 @@
       <ul class="header__stores">
         <li>
           <a href="#" target="_blank">
-            <div class="header__google-play"></div>
+            <svg class="header__google-play">
+              <use href="./images/other-graphics/icons/sprite.svg/#google-play"></use>
+            </svg>
           </a>
         </li>
 
         <li>
           <a href="#" target="_blank">
-            <div class="header__app-store"></div>
+            <svg class="header__app-store">
+              <use href="./images/other-graphics/icons/sprite.svg/#app-store"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -100,22 +113,30 @@
 
         <ul class="advantages__list">
           <li class="card">
-            <div class="card__icon icon-headphones"></div>
+            <svg class="card__icon">
+              <use href="./images/other-graphics/icons/sprite.svg/#headphones-outline"></use>
+            </svg>
             <p class="card__text">Support 24/7</p>
           </li>
 
           <li class="card">
-            <div class="card__icon icon-chat"></div>
+            <svg class="card__icon">
+              <use href="./images/other-graphics/icons/sprite.svg/#chat-outline"></use>
+            </svg>
             <p class="card__text">Communicate directly</p>
           </li>
 
           <li class="card">
-            <div class="card__icon icon-devices"></div>
+            <svg class="card__icon">
+              <use href="./images/other-graphics/icons/sprite.svg/#devices-outline"></use>
+            </svg>
             <p class="card__text">Book online</p>
           </li>
 
           <li class="card">
-            <div class="card__icon icon-thumb-up"></div>
+            <svg class="card__icon">
+              <use href="./images/other-graphics/icons/sprite.svg/#thumb-up-outline"></use>
+            </svg>
             <p class="card__text">Real guest reviews</p>
           </li>
         </ul>

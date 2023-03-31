@@ -122,16 +122,21 @@ a:hover {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-image: url("../images/other-graphics/icons/sprite.png");
-  background-position: left top;
+  color: white;
 }
 
 .header__account {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  background-image: url("../images/other-graphics/icons/sprite.png");
-  background-position: left -30px;
+}
+
+.header__view-mode:hover {
+  color: #4200b7;
+}
+
+.header__account:hover {
+  color: #F5BD41;
 }
 
 .header__title {
@@ -234,15 +239,11 @@ a:hover {
 .header__google-play {
   width: 135px;
   height: 40px;
-  background-image: url("../images/other-graphics/icons/sprite.png");
-  background-position: left -70px;
 }
 
 .header__app-store {
   width: 118px;
   height: 40px;
-  background-image: url("../images/other-graphics/icons/sprite.png");
-  background-position: left -110px;
 }
 
 /* ###############################################
@@ -300,9 +301,7 @@ a:hover {
 .card__icon {
   width: 100px;
   height: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
+  color: #3077C6;
   margin-bottom: 48px;
 }
 
@@ -312,25 +311,6 @@ a:hover {
   line-height: 28px;
   color: #383838;
   text-align: center;
-}
-
-.icon-headphones {
-  background-image: url("../images/other-graphics/icons/icon-headphones.png");
-}
-
-.icon-chat {
-  background-image: url("../images/other-graphics/icons/icon-chat.png");
-}
-
-.icon-devices {
-  background-image: url("../images/other-graphics/icons/icon-devices.png");
-}
-
-.icon-thumb-up {
-  background-image: url("../images/other-graphics/icons/icon-thumb-up.png");
-  background-size: 90%;
-  background-position-x: 51%;
-  background-position-y: 30%;
 }
 
 
