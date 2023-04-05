@@ -74,17 +74,17 @@ a:hover {
 
 }
 
-.nav-1 {
+.nav-links {
   display: flex;
   align-items: flex-end;
 }
 
-.nav-1__list {
+.nav-links__list {
   display: flex;
   column-gap: 24px;
 }
 
-.nav-1__item {
+.nav-links__item {
   cursor: pointer;
   text-align: center;
   display: flex;
@@ -93,7 +93,7 @@ a:hover {
   align-items: center;
 }
 
-.nav-1__link {
+.nav-links__link {
   color: white;
   font-weight: 400;
   font-size: 24px;
@@ -101,46 +101,46 @@ a:hover {
   margin-bottom: 8px;
 }
 
-.nav-1__link-underline {
+.nav-links__link-underline {
   width: 80%;
   height: 4px;
   background-color: #f5bd41;
   visibility: hidden;
 }
 
-.nav-1__item:hover > .nav-1__link-underline {
+.nav-links__item:hover > .nav-links__link-underline {
   visibility: visible;
 }
 
-.nav-2 {
+.nav-btns {
   display: flex;
   align-items: flex-start;
 }
 
-.nav-2__list{
+.nav-btns__list{
   display: flex;
   align-items: center;
   column-gap: 24px;
 }
 
-.header__view-mode {
+.nav-btns__view-mode {
   cursor: pointer;
   width: 30px;
   height: 30px;
   color: white;
 }
 
-.header__account {
+.nav-btns__account {
   cursor: pointer;
   width: 40px;
   height: 40px;
 }
 
-.header__view-mode:hover {
+.nav-btns__view-mode:hover {
   color: #F5BD41;
 }
 
-.header__account:hover {
+.nav-btns__account:hover {
   color: #F5BD41;
 }
 
@@ -245,7 +245,6 @@ a:hover {
 .header__google-play {
   width: 135px;
   height: 40px;
-  /*background-image: url("../images/other-graphics/icons/google-play.svg");*/
 }
 
 .header__app-store {
