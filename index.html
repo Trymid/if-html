@@ -6,37 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/media-queries.css">
+  <link rel="icon" type="image/svg+xml" href="./images/other-graphics/icons/favicon.svg">
   <title>TripHouse</title>
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header__bar">
-        <div>
+        <div class="header__logo">
           <a href="./index.html">
-            <img src="./images/content/logo.png" alt="logo">
+            <img src="./images/content/logo.svg" alt="logo">
           </a>
         </div>
 
         <div class="header__menu">
-          <nav class="nav-1">
-            <ul class="nav-1__list">
-              <li class="nav-1__item">
-                <a class="nav-1__link" href="#">Stays</a>
-                <span class="nav-1__link-underline"></span>
+          <nav class="nav-links">
+            <ul class="nav-links__list">
+              <li class="nav-links__item">
+                <a class="nav-links__link" href="#">Stays</a>
+                <span class="nav-links__link-underline"></span>
               </li>
 
-              <li class="nav-1__item">
-                <a class="nav-1__link" href="#">Attractions</a>
-                <span class="nav-1__link-underline"></span>
+              <li class="nav-links__item">
+                <a class="nav-links__link" href="#">Attractions</a>
+                <span class="nav-links__link-underline"></span>
               </li>
             </ul>
           </nav>
 
-          <nav class="nav-2">
-            <ul class="nav-2__list">
-              <li class="header__view-mode"></li>
-              <li class="header__account"></li>
+          <nav class="nav-btns">
+            <ul class="nav-btns__list">
+              <li>
+                <svg class="nav-btns__view-mode">
+                  <use href="./images/other-graphics/icons/sprite.svg/#night-view-outline"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="nav-btns__account">
+                  <use href="./images/other-graphics/icons/sprite.svg/#account-outline"></use>
+                </svg>
+              </li>
             </ul>
           </nav>
         </div>
@@ -46,46 +56,48 @@
         <span>to live, work or just relax</span>
       </h1>
 
-      <form action="/" class="form" method="post">
-        <ul class="form__list">
-          <li class="form__section form__destination">
-            <label class="form__label" for="destination">Your destination or hotel name</label>
-            <div class="form__background form__background--left">
-              <input id="destination" class="form__item" type="text" name="destination" value="New York">
+      <form action="/" class="header__form" method="post">
+          <div class="header__section header__destination">
+            <label class="header__label" for="destination">Your destination or hotel name</label>
+            <div class="header__bg-fill header__bg-fill--rounded-edge-left">
+              <input id="destination" class="header__item" type="text" name="destination" value="New York">
             </div>
-          </li>
+          </div>
 
-          <li class="form__section form__dates">
-            <label class="form__label" for="dates">Check-in — Check-out</label>
-            <div class="form__background">
-              <button id="dates" class="form__item" type="button">Tue 15 Sept — Sat 19 Sept</button>
+          <div class="header__section header__dates">
+            <label class="header__label" for="dates">Check-in — Check-out</label>
+            <div class="header__bg-fill">
+              <button id="dates" class="header__item" type="button">Tue 15 Sept — Sat 19 Sept</button>
             </div>
-          </li>
+          </div>
 
-          <li class="form__parameters">
-            <div class="form__background">
-              <button class="form__item" type="button">2 Adults — 0 Children — 1 Room</button>
+          <div class="header__parameters">
+            <div class="header__bg-fill">
+              <button class="header__item" type="button">2 Adults — 0 Children — 1 Room</button>
             </div>
-          </li>
+          </div>
 
-          <li class="form__search">
-            <div class="form__background form__background--right">
-              <button class="form__item btn-search">Search</button>
+          <div class="header__search">
+            <div class="header__bg-fill header__bg-fill--rounded-edge-right">
+              <button class="header__item btn-search">Search</button>
             </div>
-          </li>
-        </ul>
+          </div>
       </form>
 
       <ul class="header__stores">
         <li>
           <a href="#" target="_blank">
-            <div class="header__google-play"></div>
+            <svg class="header__google-play">
+              <use href="./images/other-graphics/icons/sprite.svg/#google-play"></use>
+            </svg>
           </a>
         </li>
 
         <li>
           <a href="#" target="_blank">
-            <div class="header__app-store"></div>
+            <svg class="header__app-store">
+              <use href="./images/other-graphics/icons/sprite.svg/#app-store"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -100,22 +112,30 @@
 
         <ul class="advantages__list">
           <li class="card">
-            <div class="card__icon icon-headphones"></div>
+            <svg class="card__icon">
+              <use href="./images/other-graphics/icons/sprite.svg/#headphones-outline"></use>
+            </svg>
             <p class="card__text">Support 24/7</p>
           </li>
 
           <li class="card">
-            <div class="card__icon icon-chat"></div>
+            <svg class="card__icon">
+              <use href="./images/other-graphics/icons/sprite.svg/#chat-outline"></use>
+            </svg>
             <p class="card__text">Communicate directly</p>
           </li>
 
           <li class="card">
-            <div class="card__icon icon-devices"></div>
+            <svg class="card__icon">
+              <use href="./images/other-graphics/icons/sprite.svg/#devices-outline"></use>
+            </svg>
             <p class="card__text">Book online</p>
           </li>
 
           <li class="card">
-            <div class="card__icon icon-thumb-up"></div>
+            <svg class="card__icon">
+              <use href="./images/other-graphics/icons/sprite.svg/#thumb-up-outline"></use>
+            </svg>
             <p class="card__text">Real guest reviews</p>
           </li>
         </ul>
