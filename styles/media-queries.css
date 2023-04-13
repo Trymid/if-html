@@ -6,22 +6,47 @@
 
 /*}*/
 
-@media (max-width: 1024px) {
-  .footer__list {
-    width: 150px;
-  }
-}
+/*@media (max-width: 1024px) {*/
+
+/*}*/
 
 @media (max-width: 768px) {
-  .footer__list {
-    justify-content: center;
+  .advantages {
+    padding-top: 60px;
   }
 }
 
 @media (max-width: 480px) {
+  .advantages {
+    padding: 24px 73px 40px 73px;
+  }
 
+  .advantages__header {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 32px;
+  }
+
+  .advantages__highlight {
+    display: none;
+  }
+
+  .advantages__list {
+    row-gap: 32px;
+  }
+
+  .card__icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 16px;
+  }
+
+  .card__text {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 
-@media (max-width: 360px) {
+/*@media (max-width: 360px) {*/
 
-}
+/*}*/
