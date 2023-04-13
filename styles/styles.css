@@ -48,22 +48,33 @@ a:hover {
   width: 100%;
   height: 46px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 21.78vh;
 
 }
 
-.header__logo {
+.logo {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.logo__header {
   width: 205px;
   height: 40px;
+  color: #3077C6;
+}
+
+.header .logo {
+  margin-bottom: 0;
 }
 
 .header__menu {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   column-gap: 48px;
-
 }
 
 .header__side {
@@ -335,17 +346,31 @@ a:hover {
   padding: 120px 7.22% 120px 7.22%;
 }
 
+.logo__footer {
+  width: 98px;
+  height: 19px;
+  color: white;
+}
+
+.footer .logo {
+  display: none;
+}
+
+.logo__link {
+  display: inherit;
+}
+
 .footer__menu {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 1.11%;
-  row-gap: 3vh;
+  column-gap: 16px;
+  row-gap: 6vh;
   justify-content: space-between;
   margin-bottom: 64px;
 }
 
 .footer__list {
-  width: 400px;
+  width: 32.45%;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
