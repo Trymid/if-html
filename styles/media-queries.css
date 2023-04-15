@@ -16,22 +16,18 @@
     height: 24px;
   }
 
-  .advantages {
-    padding-top: 60px;
-    padding-bottom: 61px;
-  }
-
-  .footer {
+  .container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
-
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 40px 18.88% 40px 18.88%;
+  }
   .advantages {
-    padding: 24px 73px 40px 73px;
+    padding-top: 24px;
   }
 
   .advantages__header {
@@ -57,10 +53,6 @@
   .card__text {
     font-size: 15px;
     line-height: 18px;
-  }
-
-  .footer {
-    padding: 40px 18.88% 40px 18.88%;
   }
 
   .footer .logo {
