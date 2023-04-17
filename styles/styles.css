@@ -32,12 +32,16 @@ a:hover {
 /* ###############################################
                   || HEADER
 ################################################# */
+.container {
+  padding: 120px 7.22% 120px 7.22%;
+}
+
 .header {
   box-sizing: border-box;
   color: white;
   width: 100%;
   min-height: 100vh;
-  padding: 5.67vh 7.22% 13.35vh 7.22%;
+  padding-top: 5.67vh;
   background-image: url("../images/other-graphics/background/header-background.jpg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -48,22 +52,33 @@ a:hover {
   width: 100%;
   height: 46px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 21.78vh;
 
 }
 
-.header__logo {
+.logo {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.logo__header {
   width: 205px;
   height: 40px;
+  color: #3077C6;
+}
+
+.header .logo {
+  margin-bottom: 0;
 }
 
 .header__menu {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   column-gap: 48px;
-
 }
 
 .header__side {
@@ -268,8 +283,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 7.22% 122px 7.22%;
-
 }
 
 .advantages__header {
@@ -282,7 +295,7 @@ a:hover {
 }
 
 .advantages__highlight {
-  width: 8.12%;
+  width: 100px;
   height: 4px;
   background-color: #f5bd41;
   border: none;
@@ -294,9 +307,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 3vh;
+  row-gap: 80px;
   column-gap: 1.3%;
-  justify-content: center;
+  justify-content: space-around;
 
 }
 
@@ -332,20 +345,33 @@ a:hover {
 .footer {
   color: white;
   background-color: #10367c;
-  padding: 120px 7.22% 120px 7.22%;
+}
+
+.logo__footer {
+  width: 98px;
+  height: 19px;
+  color: white;
+}
+
+.footer .logo {
+  display: none;
+}
+
+.logo__link {
+  display: inherit;
 }
 
 .footer__menu {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 1.11%;
-  row-gap: 3vh;
+  column-gap: 16px;
+  row-gap: 40px;
   justify-content: space-between;
   margin-bottom: 64px;
 }
 
 .footer__list {
-  width: 400px;
+  width: 32.45%;
   display: flex;
   flex-direction: column;
   row-gap: 24px;

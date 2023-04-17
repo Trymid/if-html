@@ -12,11 +12,13 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="container header">
       <div class="header__bar">
-        <div class="header__logo">
+        <div class="logo">
           <a href="./index.html">
-            <img src="./images/content/logo.svg" alt="logo">
+            <svg class="logo__header">
+              <use href="./images/other-graphics/icons/sprite.svg/#logo"></use>
+            </svg>
           </a>
         </div>
 
@@ -105,7 +107,7 @@
 
 
     <main class="main">
-      <div class="advantages">
+      <div class="container advantages">
         <h2 class="advantages__header">What do we offer</h2>
 
         <hr class="advantages__highlight"/>
@@ -143,7 +145,15 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="container footer">
+      <div class="logo">
+        <a class="logo__link" href="./index.html">
+          <svg class="logo__footer">
+            <use href="./images/other-graphics/icons/sprite.svg/#logo"></use>
+          </svg>
+        </a>
+      </div>
+
       <div class="footer__menu">
         <ul class="footer__list">
           <li class="footer__list-item"><a class="footer__link" href="#">About</a></li>
@@ -170,7 +180,7 @@
         </ul>
       </div>
 
-      <p class="footer__copyrights">© 2022Triphouse, Inc. All rights reserved</p>
+      <p class="footer__copyrights">© 2022 Triphouse, Inc. All rights reserved</p>
     </footer>
   </div>
 </body>
