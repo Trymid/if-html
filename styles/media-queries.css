@@ -2,30 +2,91 @@
 /*  */
 /*}*/
 
-@media (max-width: 1280px) {
+/*@media (max-width: 1280px) {*/
 
-}
+/*}*/
 
 /*@media (max-width: 1024px) {*/
 
 /*}*/
 
 @media (max-width: 768px) {
-  .logo__header {
-    width: 122px;
-    height: 24px;
-  }
-
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  .header {
+    padding-top: 30px;
+  }
+
+  .header__bar {
+    height: 48px;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-btns__item:nth-of-type(n):not(:nth-of-type(n+3)) {
+    margin-right: 24px;
+  }
+
+  .nav-btns__burger-menu {
+    display: block;
+    width: 36px;
+    height: 28px;
+  }
+
+  .header__title {
+    width: 328px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
 }
 
 @media (max-width: 480px) {
   .container {
     padding: 40px 18.88% 40px 18.88%;
   }
+
+  .header {
+    padding: 0 16px 40px 16px;
+  }
+
+  .logo__header {
+    width: 160px;
+    height: 40px;
+  }
+
+  .nav-btns__item:nth-of-type(n):not(:nth-of-type(n+3)) {
+    margin-right: 16px;
+  }
+
+  .nav-btns__view-mode {
+    width: 16px;
+    height: 16px;
+  }
+
+  .nav-btns__account {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-btns__burger-menu {
+    width: 24px;
+    height: 16px;
+  }
+
+  .header__title {
+    width: 328px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
   .advantages {
     padding-top: 24px;
   }
@@ -82,5 +143,20 @@
     font-size: 12px;
     line-height: 14px;
     text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo__header {
+    width: 122px;
+    height: 24px;
+  }
+
+  .header__bar {
+    margin-bottom: 40px;
+  }
+
+  .header__title {
+    margin-bottom: 30px;
   }
 }

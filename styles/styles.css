@@ -135,7 +135,11 @@ a:hover {
 .nav-btns__list{
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  /*column-gap: 24px;*/
+}
+
+.nav-btns__item:nth-of-type(n):not(:nth-of-type(n+2)) {
+  margin-right: 24px;
 }
 
 .nav-btns__view-mode {
@@ -151,6 +155,12 @@ a:hover {
   height: 40px;
 }
 
+.nav-btns__burger-menu {
+  width: 24px;
+  height: 16px;
+  display: none;
+}
+
 .nav-btns__view-mode:hover {
   color: #F5BD41;
 }
@@ -162,7 +172,8 @@ a:hover {
 .header__title {
   display: flex;
   flex-wrap: wrap;
-  width: 44%;
+  /*width: 44%;*/
+  width: 542px;
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
