@@ -31,12 +31,12 @@ input {
 /* ###############################################
                   || WRAPPER
 ################################################# */
-.wrapper {
-  max-width: 1440px;
-  min-width: 360px;
-  height: auto;
-  margin: 0 auto;
-}
+/*.wrapper {*/
+/*  max-width: 1440px;*/
+/*  min-width: 360px;*/
+/*  height: auto;*/
+/*  margin: 0 auto;*/
+/*}*/
 
 
 
@@ -46,19 +46,24 @@ input {
                   || HEADER
 ################################################# */
 .container {
+  box-sizing: border-box;
+  max-width: 1440px;
+  min-width: 360px;
+  margin: 0 auto;
   padding: 120px 7.22% 120px 7.22%;
 }
 
-.header {
-  box-sizing: border-box;
-  color: white;
-  width: 100%;
-  min-height: 100vh;
+.top-section {
   padding-top: 5.67vh;
+  color: white;
+}
+
+.header {
+  min-height: 100vh;
   background-image: url("../images/other-graphics/background/header-background.jpg");
   background-position: top left 50%;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 .header__bar {
@@ -293,6 +298,8 @@ input {
 }
 
 .header__item {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   cursor: pointer;
   font-weight: 400;
   font-size: 18px;
