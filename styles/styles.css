@@ -26,25 +26,6 @@ input {
   border: none;
 }
 
-
-
-/* ###############################################
-                  || WRAPPER
-################################################# */
-/*.wrapper {*/
-/*  max-width: 1440px;*/
-/*  min-width: 360px;*/
-/*  height: auto;*/
-/*  margin: 0 auto;*/
-/*}*/
-
-
-
-
-
-/* ###############################################
-                  || HEADER
-################################################# */
 .container {
   box-sizing: border-box;
   max-width: 1440px;
@@ -53,6 +34,33 @@ input {
   padding: 120px 7.22% 120px 7.22%;
 }
 
+.title {
+  position: relative;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
+  margin-bottom: 104px;
+  text-align: center;
+}
+
+.title--underline-active::after {
+  position: absolute;
+  content: '';
+  background-color: #f5bd41;
+  height: 4px;
+  bottom: -24px;
+  left: 33.5%;
+  right: 33.5%;
+}
+
+
+
+
+
+/* ###############################################
+                  || HEADER
+################################################# */
 .top-section {
   padding-top: 5.67vh;
   color: white;
@@ -190,7 +198,6 @@ input {
 .header__title {
   display: flex;
   flex-wrap: wrap;
-  /*width: 44%;*/
   width: 542px;
   font-weight: 500;
   font-size: 50px;
@@ -399,14 +406,6 @@ input[class *= 'header__item']::placeholder {
   color: #383838;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.advantages__highlight {
-  width: 100px;
-  height: 4px;
-  background-color: #f5bd41;
-  border: none;
-  margin-bottom: 80px;
 }
 
 .advantages__list {

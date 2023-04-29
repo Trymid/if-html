@@ -141,6 +141,12 @@
             || 480px
 ===================================*/
 @media (max-width: 480px) {
+  .title__mobile {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 32px;
+  }
+
   .container {
     padding: 40px 18.88% 40px 18.88%;
   }
@@ -271,7 +277,7 @@
     margin-bottom: 32px;
   }
 
-  .advantages__highlight {
+  .title--underline-disabled::after {
     display: none;
   }
 
