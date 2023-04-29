@@ -127,6 +127,7 @@ input {
 }
 
 .nav-links__link {
+  position: relative;
   color: white;
   font-weight: 400;
   font-size: 24px;
@@ -134,15 +135,19 @@ input {
   margin-bottom: 8px;
 }
 
-.nav-links__link-underline {
-  width: 80%;
+.nav-links__link:hover::after {
+  position: absolute;
+  content: '';
+  bottom: -12px;
+  left: 8%;
+  right: 8%;
   height: 4px;
   background-color: #f5bd41;
-  visibility: hidden;
 }
 
-.nav-links__item:hover > .nav-links__link-underline {
-  visibility: visible;
+.nav-btns {
+  display: flex;
+  align-items: flex-start;
 }
 
 .nav-btns {
