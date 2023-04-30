@@ -11,9 +11,8 @@
   <title>TripHouse</title>
 </head>
 <body>
-<!--  <div class="wrapper">-->
     <header class="header">
-      <div class="container top-section">
+      <div class="container container__mobile top-section">
         <div class="header__bar">
           <div class="logo">
             <a href="./index.html">
@@ -28,37 +27,35 @@
               <ul class="nav-links__list">
                 <li class="nav-links__item">
                   <a class="nav-links__link" href="#">Stays</a>
-                  <span class="nav-links__link-underline"></span>
                 </li>
 
                 <li class="nav-links__item">
                   <a class="nav-links__link" href="#">Attractions</a>
-                  <span class="nav-links__link-underline"></span>
                 </li>
               </ul>
             </nav>
 
-            <nav class="nav-btns">
-              <ul class="nav-btns__list">
-                <li class="nav-btns__item">
-                  <svg class="nav-btns__view-mode">
+            <div class="header-btns">
+              <ul class="header-btns__list">
+                <li class="header-btns__item">
+                  <svg class="header-btns__view-mode">
                     <use href="./images/other-graphics/icons/sprite.svg/#night-view-outline"></use>
                   </svg>
                 </li>
 
-                <li class="nav-btns__item">
-                  <svg class="nav-btns__account">
+                <li class="header-btns__item">
+                  <svg class="header-btns__account">
                     <use href="./images/other-graphics/icons/sprite.svg/#account-outline"></use>
                   </svg>
                 </li>
 
-                <li class="nav-btns__item">
-                  <svg class="nav-btns__burger-menu">
+                <li class="header-btns__item">
+                  <svg class="header-btns__burger-menu">
                     <use href="./images/other-graphics/icons/sprite.svg/#burger-menu-outline"></use>
                   </svg>
                 </li>
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
 
@@ -146,9 +143,7 @@
 
     <main class="main">
       <div class="container advantages">
-        <h2 class="advantages__header">What do we offer</h2>
-
-        <hr class="advantages__highlight"/>
+        <h2 class="title title__mobile title--underline-active title--underline-disabled">What do we offer</h2>
 
         <ul class="advantages__list">
           <li class="card">
@@ -180,7 +175,55 @@
           </li>
         </ul>
       </div>
+
+
+
+
+      <div class="homes">
+        <div class="container container__mobile ">
+          <h2 class="title title__mobile">Homes guests loves</h2>
+
+          <div class="homes__wrapper">
+            <ul class="carousel">
+              <li class="carousel__item">
+                <a class="carousel__link" href="#">
+                  <img class="carousel__image" src="./images/content/homes/hotel-leopold.jpg" alt="Hotel Leopold">
+                </a>
+                <h3><a class="carousel__title" href="#">Hotel Leopold</a></h3>
+                <p class="carousel__text">Saint Petersburg, Russia</p>
+              </li>
+
+              <li class="carousel__item">
+                <a class="carousel__link" href="#">
+                  <img class="carousel__image" src="./images/content/homes/apartment-sunshine.jpg" alt="Apartment Sunshine" >
+                </a>
+                <h3><a class="carousel__title" href="#">Apartment Sunshine</a></h3>
+                <p class="carousel__text">Santa  Cruz de Tenerife, Spain</p>
+              </li>
+
+              <li class="carousel__item">
+                <a class="carousel__link" href="#">
+                  <img class="carousel__image" src="./images/content/homes/villa-kunerad.jpg" alt="Villa Kunerad" >
+                </a>
+                <h3><a class="carousel__title" href="#">Villa Kunerad</a></h3>
+                <p class="carousel__text">Vysokie Tatry, Slowakia</p>
+              </li>
+
+              <li class="carousel__item">
+                <a class="carousel__link" href="#">
+                  <img class="carousel__image" src="./images/content/homes/hostel-friendship.jpg" alt="Hostel Friendship" >
+                </a>
+                <h3><a class="carousel__title" href="#">Hostel Friendship</a></h3>
+                <p class="carousel__text">Berlin, Germany</p>
+              </li>
+            </ul>
+
+            <button class="carousel__arrow-right" type="button"></button>
+          </div>
+        </div>
+      </div>
     </main>
+
 
 
     <footer class="footer">
@@ -222,6 +265,5 @@
         <p class="footer__copyrights">© 2022 Triphouse, Inc. All rights reserved</p>
       </div>
     </footer>
-<!--  </div>-->
 </body>
 </html>

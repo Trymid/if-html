@@ -58,6 +58,10 @@
   .header__dates {
     flex: 1 1 312px;
   }
+
+  .carousel__item:nth-child(n + 4) {
+    display: none;
+  }
 }
 
 
@@ -87,11 +91,11 @@
     display: none;
   }
 
-  .nav-btns__item:nth-of-type(n):not(:nth-of-type(n+3)) {
+  .header-btns__item:nth-of-type(n):not(:nth-of-type(n+3)) {
     margin-right: 24px;
   }
 
-  .nav-btns__burger-menu {
+  .header-btns__burger-menu {
     display: block;
     width: 36px;
     height: 28px;
@@ -131,6 +135,10 @@
     flex: 1 0 192px;
   }
 
+  .carousel__item:nth-child(n + 3) {
+    display: none;
+  }
+
 }
 
 
@@ -141,12 +149,22 @@
             || 480px
 ===================================*/
 @media (max-width: 480px) {
+  .title__mobile {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 32px;
+  }
+
   .container {
     padding: 40px 18.88% 40px 18.88%;
   }
 
+  .container__mobile {
+    padding: 40px 16px;
+  }
+
   .top-section {
-    padding: 0 16px 40px 16px;
+    padding-top: 0;
   }
 
   .header {
@@ -159,21 +177,21 @@
     height: 40px;
   }
 
-  .nav-btns__item:nth-of-type(n):not(:nth-of-type(n+3)) {
+  .header-btns__item:nth-of-type(n):not(:nth-of-type(n+3)) {
     margin-right: 16px;
   }
 
-  .nav-btns__view-mode {
+  .header-btns__view-mode {
     width: 16px;
     height: 16px;
   }
 
-  .nav-btns__account {
+  .header-btns__account {
     width: 24px;
     height: 24px;
   }
 
-  .nav-btns__burger-menu {
+  .header-btns__burger-menu {
     width: 24px;
     height: 16px;
   }
@@ -254,11 +272,11 @@
   }
 
   .contour-light:hover {
-    outline: 3px solid greenyellow;
+    outline: 2px solid rgba(66, 129, 245, 0.45);
   }
 
   .contour-light:focus {
-    outline: 3px solid greenyellow;
+    outline: 2px solid rgba(66, 129, 245, 0.45);
   }
 
   .advantages {
@@ -271,7 +289,7 @@
     margin-bottom: 32px;
   }
 
-  .advantages__highlight {
+  .title--underline-disabled::after {
     display: none;
   }
 
@@ -288,6 +306,24 @@
   .card__text {
     font-size: 15px;
     line-height: 18px;
+  }
+
+  .carousel__item {
+    row-gap: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .carousel__image {
+    margin-bottom: 4px;
+  }
+
+  .carousel__arrow-right {
+    width: 32px;
+    height: 32px;
+    right: -16px;
+    background-size: 7px 15px;
   }
 
   .footer .logo {
@@ -346,6 +382,13 @@
 
   .header__parameters {
     flex: 1 1 300px;
+  }
+
+  .carousel__arrow-right {
+    width: 28px;
+    height: 28px;
+    right: -14px;
+    background-size: 5px 13px;
   }
 
 }
