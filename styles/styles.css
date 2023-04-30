@@ -172,15 +172,24 @@ input {
   margin-bottom: 8px;
 }
 
-.nav-links__link:hover::after {
+.nav-links__link::after {
   position: absolute;
   content: '';
   bottom: -12px;
-  left: 8%;
-  right: 8%;
+  left: 50%;
+  right: 50%;
   height: 4px;
   background-color: var(--accent-yellow);
+  transition: all 0.5s ease;
+
 }
+
+.nav-links__link:hover::after {
+  left: 8%;
+  right: 8%;
+  transition: all 0.5s ease;
+}
+
 
 .header-btns {
   display: flex;
