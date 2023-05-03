@@ -10,9 +10,11 @@
 :root {
   --general-blue: #10367C;
   --accent-blue: #3077C6;
+  --accent-blue-hover: #609de8;
   --bg-color: #EAF0F9;
   --accent-yellow: #F5BD41;
   --stroke-color: #F3F3F4;
+  --stroke-color-hover: #c9c9ec;
   --text-color: #383838;
   --general-white: #FFFFFF;
   --secondary-text: #BFBFBF;
@@ -490,11 +492,12 @@ input[class *= 'header__item']::placeholder {
   background-color: var(--bg-color);
 }
 
-.homes__wrapper {
+.carousel__wrapper {
   position: relative;
 }
 
 .carousel {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -502,20 +505,28 @@ input[class *= 'header__item']::placeholder {
   row-gap: 16px;
 }
 
-.carousel__arrow-right {
+.carousel__arrow {
   cursor: pointer;
   position: absolute;
   background-color: var(--bg-color);
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  top: 30%;
-  right: -20px;
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
   background-image: url("../images/other-graphics/icons/carousel-right-arrow.svg");
   background-repeat: no-repeat;
-  background-size: 9px 21px;
   background-position: center;
+}
+
+.carousel__arrow--right {
+  top: 30%;
+  right: -20px;
+  background-size: 9px 21px;
+}
+
+.carousel__arrow--bottom {
+  box-shadow: 3px 0 5px 1px rgba(0, 0, 0, 0.5);
+  transform: rotate(90deg);
 }
 
 .carousel__item {
@@ -532,6 +543,7 @@ input[class *= 'header__item']::placeholder {
 }
 
 .carousel__image {
+  position: relative;
   width: 100%;
   object-position: center;
   object-fit: cover;
@@ -544,6 +556,85 @@ input[class *= 'header__item']::placeholder {
 .carousel__link {
   display: contents;
   width: 100%;
+}
+
+
+
+
+
+/* ##############################################
+                  || DESTINATIONS
+################################################ */
+.destinations__list {
+  width: 50.5%;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 65px;
+}
+
+.destinations__item {
+  flex: 1 0 192px;
+}
+
+.destinations-btn {
+  width: 100%;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--stroke-color);
+  border-radius: 8px;
+  padding: 17px 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.destinations-btn:hover {
+  background-color: var(--stroke-color-hover);
+}
+
+.destinations__item:first-child .destinations-btn {
+  color: var(--general-white);
+  background-color: var(--accent-blue);
+}
+
+.destinations__item:first-child .destinations-btn:hover {
+  background-color: var(--accent-blue-hover);
+}
+
+.destinations__item:last-child {
+  flex: 1 0 232px;
+}
+
+.destinations .carousel__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destinations__carousel {
+  margin-bottom: 48px;
+}
+
+/*.destinations .carousel__link::after {*/
+/*  position: absolute;*/
+/*  content: 'asdfsadfsadfsa';*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  background-color: black;*/
+/*  filter: opacity(0.4%);*/
+/*}*/
+
+.destinations__bottom-button {
+  position: relative;
+}
+
+.destinations .carousel__arrow--right {
+  display: none;
 }
 
 

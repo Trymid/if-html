@@ -142,7 +142,7 @@
 
 
     <main class="main">
-      <div class="container advantages">
+      <section class="container advantages">
         <h2 class="title title__mobile title--underline-active title--underline-disabled">What do we offer</h2>
 
         <ul class="advantages__list">
@@ -174,16 +174,16 @@
             <p class="card__text">Real guest reviews</p>
           </li>
         </ul>
-      </div>
+      </section>
 
 
 
 
       <div class="homes">
-        <div class="container container__mobile ">
+        <section class="container container__mobile ">
           <h2 class="title title__mobile">Homes guests loves</h2>
 
-          <div class="homes__wrapper">
+          <div class="carousel__wrapper">
             <ul class="carousel">
               <li class="carousel__item">
                 <a class="carousel__link" href="#">
@@ -218,9 +218,65 @@
               </li>
             </ul>
 
-            <button class="carousel__arrow-right" type="button"></button>
+            <button class="carousel__arrow carousel__arrow--right" type="button"></button>
           </div>
-        </div>
+        </section>
+      </div>
+
+
+      <div class="destinations">
+        <section class="container container__mobile">
+          <h2 class="title title__mobile">The best destinations</h2>
+
+          <ul class="destinations__list">
+            <li class="destinations__item">
+              <button class="destinations-btn" type="button">Regions</button>
+            </li>
+            <li class="destinations__item">
+              <button class="destinations-btn" type="button">Cities</button>
+            </li>
+            <li class="destinations__item">
+              <button class="destinations-btn" type="button">Places <span class="destinations-btn-span">of interest</span></button>
+            </li>
+          </ul>
+
+          <div class="carousel__wrapper">
+            <ul class="carousel destinations__carousel">
+              <li class="carousel__item">
+                <a class="carousel__link" href="#">
+                  <img class="carousel__image" src="./images/content/homes/hotel-leopold.jpg" alt="Hotel Leopold">
+                </a>
+                <h3><a class="carousel__title" href="#">Maldives</a></h3>
+              </li>
+
+              <li class="carousel__item">
+                <a class="carousel__link" href="#">
+                  <img class="carousel__image" src="./images/content/homes/apartment-sunshine.jpg" alt="Apartment Sunshine" >
+                </a>
+                <h3><a class="carousel__title" href="#">Spain</a></h3>
+              </li>
+
+              <li class="carousel__item">
+                <a class="carousel__link" href="#">
+                  <img class="carousel__image" src="./images/content/homes/villa-kunerad.jpg" alt="Villa Kunerad" >
+                </a>
+                <h3><a class="carousel__title" href="#">Norway</a></h3>
+              </li>
+
+              <li class="carousel__item">
+                <a class="carousel__link" href="#">
+                  <img class="carousel__image" src="./images/content/homes/hostel-friendship.jpg" alt="Hostel Friendship" >
+                </a>
+                <h3><a class="carousel__title" href="#">Island
+                </a></h3>
+              </li>
+            </ul>
+
+            <button class="carousel__arrow carousel__arrow--right" type="button"></button>
+
+            <button class="carousel__arrow carousel__arrow--bottom destinations__bottom-button" type="button"></button>
+          </div>
+        </section>
       </div>
     </main>
 
