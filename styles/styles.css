@@ -618,16 +618,11 @@ input[class *= 'header__item']::placeholder {
   margin-bottom: 48px;
 }
 
-/*.destinations .carousel__link::after {*/
-/*  position: absolute;*/
-/*  content: 'asdfsadfsadfsa';*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  bottom: 0;*/
-/*  background-color: black;*/
-/*  filter: opacity(0.4%);*/
-/*}*/
+.destinations .carousel__image:hover {
+  filter: opacity(40%);
+  box-shadow: inset 0 4px 70px rgba(56, 56, 56, 0.5);
+  mix-blend-mode: saturation;
+}
 
 .destinations__bottom-button {
   position: relative;
