@@ -59,7 +59,7 @@
     flex: 1 1 312px;
   }
 
-  .carousel__item:nth-child(n + 4) {
+  .slider__item:nth-child(n + 4) {
     display: none;
   }
 
@@ -139,7 +139,7 @@
     flex: 1 0 192px;
   }
 
-  .carousel__item:nth-child(n + 3) {
+  .slider__item:nth-child(n + 3) {
     display: none;
   }
 
@@ -327,28 +327,28 @@
     line-height: 18px;
   }
 
-  .carousel__item {
+  .slider__item {
     row-gap: 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
   }
 
-  .carousel__image {
+  .slider__image {
     margin-bottom: 4px;
   }
 
-  .carousel__arrow {
+  .slider__arrow {
     width: 32px;
     height: 32px;
   }
 
-  .carousel__arrow--right {
+  .slider__arrow--right {
     right: -12px;
     background-size: 7px 15px;
   }
 
-  .carousel__arrow--bottom {
+  .slider__arrow--bottom {
     display: none;
   }
 
@@ -361,11 +361,11 @@
     padding: 5px 15px;
   }
 
-  .destinations__carousel {
+  .destinations__slider {
     margin-bottom: 0;
   }
 
-  .destinations .carousel__arrow--right {
+  .destinations .slider__arrow--right {
     display: inline-block;
   }
 
@@ -476,12 +476,12 @@
     flex: 1 1 300px;
   }
 
-  .carousel__arrow {
+  .slider__arrow {
     width: 28px;
     height: 28px;
   }
 
-  .carousel__arrow--right {
+  .slider__arrow--right {
     right: -10px;
     background-size: 5px 13px;
   }

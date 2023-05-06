@@ -492,11 +492,11 @@ input[class *= 'header__item']::placeholder {
   background-color: var(--bg-color);
 }
 
-.carousel__wrapper {
+.slider__wrapper {
   position: relative;
 }
 
-.carousel {
+.slider {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -505,7 +505,7 @@ input[class *= 'header__item']::placeholder {
   row-gap: 16px;
 }
 
-.carousel__arrow {
+.slider__arrow {
   cursor: pointer;
   position: absolute;
   background-color: var(--bg-color);
@@ -513,23 +513,23 @@ input[class *= 'header__item']::placeholder {
   width: 40px;
   height: 40px;
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
-  background-image: url("../images/other-graphics/icons/carousel-right-arrow.svg");
+  background-image: url("../images/other-graphics/icons/slider-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.carousel__arrow--right {
+.slider__arrow--right {
   top: 30%;
   right: -20px;
   background-size: 9px 21px;
 }
 
-.carousel__arrow--bottom {
+.slider__arrow--bottom {
   box-shadow: 3px 0 5px 1px rgba(0, 0, 0, 0.5);
   transform: rotate(90deg);
 }
 
-.carousel__item {
+.slider__item {
   flex: 1 0 155px;
   display: flex;
   flex-direction: column;
@@ -542,18 +542,18 @@ input[class *= 'header__item']::placeholder {
   color: var(--secondary-text);
 }
 
-.carousel__image {
+.slider__image {
   position: relative;
   width: 100%;
   object-position: center;
   object-fit: cover;
 }
 
-.carousel__title {
+.slider__title {
   color: var(--accent-blue);
 }
 
-.carousel__link {
+.slider__link {
   display: contents;
   width: 100%;
   position: relative;
@@ -603,13 +603,13 @@ input[class *= 'header__item']::placeholder {
   background-color: var(--accent-blue-hover);
 }
 
-.destinations .carousel__wrapper {
+.destinations .slider__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.destinations__carousel {
+.destinations__slider {
   margin-bottom: 48px;
 }
 
@@ -626,7 +626,7 @@ input[class *= 'header__item']::placeholder {
   position: relative;
 }
 
-.destinations .carousel__arrow--right {
+.destinations .slider__arrow--right {
   display: none;
 }
 
@@ -637,11 +637,16 @@ input[class *= 'header__item']::placeholder {
 /* ##############################################
                   || SIGN-IN
 ################################################ */
+.container--sign-up {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .sign-up {
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
-  padding: 24px;
+  padding: 52px 24px;
 }
 
 .sign-up__icon-1 {
