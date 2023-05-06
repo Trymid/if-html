@@ -638,8 +638,8 @@ input[class *= 'header__item']::placeholder {
                   || SIGN-IN
 ################################################ */
 .container--sign-up {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .sign-up {
