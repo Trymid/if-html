@@ -143,17 +143,14 @@
     display: none;
   }
 
-  .destinations__item {
-    flex: 1 1 98px;
-  }
-
   .destinations__list {
     column-gap: 16px;
     margin-bottom: 24px;
   }
 
   .destinations-btn {
-    padding: 10px 0;
+    min-width: 98px;
+    padding: 10px 25px;
     font-size: 19px;
     line-height: 22px;
   }
@@ -161,11 +158,6 @@
   .destinations-btn-span {
     display: none;
   }
-
-  .destinations__item:last-child {
-    flex: 1 1 98px;
-  }
-
 }
 
 
@@ -360,12 +352,70 @@
     display: none;
   }
 
+  .destinations__list {
+    justify-content: center;
+  }
+
+  .destinations-btn {
+    border-radius: 4px;
+    padding: 5px 15px;
+  }
+
   .destinations__carousel {
     margin-bottom: 0;
   }
 
   .destinations .carousel__arrow--right {
     display: inline-block;
+  }
+
+  .container--sign-up {
+    padding: 24px 16px;
+  }
+
+  .sign-up {
+    flex-direction: row;
+    padding: 0;
+    background-color: var(--general-white);
+  }
+
+  .sign-up__btn-close {
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    align-self: center;
+    margin-right: 16px;
+  }
+
+  .sign-up__cell {
+    margin-right: 16px;
+  }
+
+  .sign-up__text-desktop {
+    display: none;
+  }
+
+  .sign-up__text-mobile {
+    display: inherit;
+  }
+
+  .sign-up__icon-1 {
+    display: block;
+  }
+
+  .sign-up__icon-2 {
+    display: none;
+  }
+
+  .sign-up__btn {
+    display: none;
+  }
+
+  .sign-up__install {
+    display: block;
+    align-self: center;
   }
 
   .footer .logo {
@@ -436,7 +486,4 @@
     background-size: 5px 13px;
   }
 
-  .destinations-btn {
-    padding: 5px 0;
-  }
 }
