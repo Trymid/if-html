@@ -15,30 +15,30 @@
             || 1280px
 ===================================*/
 @media (max-width: 1280px) {
-  .header__form {
+  .form {
     flex-wrap: wrap;
     row-gap: 16px;
   }
 
-  .header__dates {
+  .form__dates {
     flex: 0 0 350px;
   }
 
-  .header__dates .header__cell {
+  .form__dates .form__cell {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
   }
 
-  .header__parameters {
+  .form__parameters {
     flex: 0 0 314px;
   }
 
-  .header__parameters .header__cell {
+  .form__parameters .form__cell {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   }
 
-  .header__search {
+  .form__search {
     flex: 0 1 192px;
   }
 }
@@ -51,11 +51,11 @@
             || 1024px
 ===================================*/
 @media (max-width: 1024px) {
-  .header__destination {
+  .form__destination {
     flex: 1 1 312px;
   }
 
-  .header__dates {
+  .form__dates {
     flex: 1 1 312px;
   }
 
@@ -111,31 +111,31 @@
     line-height: 45px;
   }
 
-  .header__item {
+  .form__item {
     height: 48px;
   }
 
-  .header__destination .header__item {
+  .form__destination .form__item {
     text-align: center;
   }
 
-  .header__dates .header__label {
+  .form__dates .form__label {
     display: none;
   }
 
-  .header__cell {
+  .form__cell {
     background: none;
   }
 
-  .header__dates {
+  .form__dates {
     flex: 1 0 259px;
   }
 
-  .header__parameters {
+  .form__parameters {
     flex: 1 0 314px;
   }
 
-  .header__search {
+  .form__search {
     flex: 1 0 192px;
   }
 
@@ -221,7 +221,7 @@
     line-height: 35px;
   }
 
-  .header__form {
+  .form {
     padding: 8px;
     gap: 8px;
     justify-content: center;
@@ -230,42 +230,42 @@
     margin-bottom: 32px;
   }
 
-  .header__label {
+  .form__label {
     display: none;
   }
 
-  .header__dates .header__cell {
+  .form__dates .form__cell {
     display: none;
   }
 
-  .header__parameters .header__cell {
+  .form__parameters .form__cell {
     display: none;
   }
 
-  .header__cell {
+  .form__cell {
     width: 100%;
     border-radius: 4px;
     background: none;
   }
 
-  .header__cell-version {
+  .form__cell-version {
     display: flex;
   }
 
-  .header__item-version {
+  .form__item-version {
     display: flex;
   }
 
-  .header__item {
+  .form__item {
     border-radius: 4px;
     height: 48px;
   }
 
-  input[class *= 'header__item'] {
+  input[class *= 'form__item'] {
     padding-left: 36px;
   }
 
-  input[class *= 'header__item']::placeholder {
+  input[class *= 'form__item']::placeholder {
     color: #383838;
     font-weight: 500;
     font-size: 15px;
@@ -273,7 +273,7 @@
     visibility: visible;
   }
 
-  .header__destination .header__cell::after {
+  .form__destination .form__cell::after {
     position: absolute;
     content: '';
     width: 16px;
@@ -468,11 +468,11 @@
     margin-bottom: 30px;
   }
 
-  .header__destination .header__item {
+  .form__destination .form__item {
     text-align: left;
   }
 
-  .header__parameters {
+  .form__parameters {
     flex: 1 1 300px;
   }
 
