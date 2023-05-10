@@ -107,7 +107,6 @@ input {
 
 .header__bar {
   width: 100%;
-  height: 46px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
