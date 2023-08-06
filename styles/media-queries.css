@@ -333,8 +333,8 @@
     line-height: 14px;
   }
 
-  .slider__image {
-    margin-bottom: 4px;
+  .slider__title {
+    margin-top: 4px;
   }
 
   .slider__arrow {
@@ -400,11 +400,11 @@
     display: inherit;
   }
 
-  .sign-up__icon-1 {
+  .sign-up__icon-logo {
     display: block;
   }
 
-  .sign-up__icon-2 {
+  .sign-up__new-user {
     display: none;
   }
 
@@ -481,6 +481,7 @@
   }
 
   .slider__arrow--right {
+    top: calc(50% - 28px);
     right: -10px;
     background-size: 5px 13px;
   }
