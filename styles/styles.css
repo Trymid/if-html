@@ -205,7 +205,6 @@ input {
 .header-btns__list {
   display: flex;
   align-items: center;
-  /*column-gap: 24px;*/
 }
 
 .header-btns__item:nth-of-type(n):not(:nth-of-type(n+2)) {
@@ -642,13 +641,18 @@ input[class *= 'form__item']::placeholder {
   transform: translate(-50%, -50%);
   display: none;
   padding: 13px 24px;
+  color: var(--accent-blue);
   background-color: var(--general-white);
   border: 1px solid var(--accent-blue);
   border-radius: 8px;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.slider__link:hover .destinations__blackout, .destinations__booking {
+.slider__link:hover .destinations__blackout, .destinations__booking { /*hover*/
   display: flex;
 }
 

@@ -360,6 +360,10 @@
     padding: 5px 15px;
   }
 
+  .destinations__booking {
+    font-size: 14px;
+  }
+
   .destinations__slider {
     margin-bottom: 0;
   }
